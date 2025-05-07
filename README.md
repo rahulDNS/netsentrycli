@@ -41,3 +41,30 @@ netsentrycli/
 
 Run it by: python3 main.py
 
+To simulate a SYN flood (optional testing):
+for i in {1..10}; do sudo nmap -sS -p 1-1000 127.0.0.1; done
+
+
+
+How It Works
+
+Captures batches of SYN packets using tshark
+
+Tracks SYN counts per source IP in a 5-second window
+
+Raises an alert if SYNs exceed the defined threshold
+
+
+
+🧩 Coming Soon
+DNS tunneling detection
+
+Alert logging system
+
+Multi-rule support (threaded)
+
+CLI dashboard
+
+
+
+
