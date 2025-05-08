@@ -4,7 +4,7 @@ import time
 from collections import defaultdict, deque
 
 THRESHOLD = 2
-WINDOW_SECONDS = 3
+WINDOW_SECONDS = 4
 ip_syn_times = defaultdict(deque)
 
 def capture_batch():
