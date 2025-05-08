@@ -22,4 +22,5 @@ jobs:
 
       - name: Run flake8 linter
         run: |
-          flake8 rules/ syn_flood.py --max-line-length=120
+          run: flake8 rules/syn_flood.py --max-line-length=120
+
