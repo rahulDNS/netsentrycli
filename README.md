@@ -45,6 +45,22 @@ To simulate a SYN flood (optional testing):
 for i in {1..10}; do sudo nmap -sS -p 1-1000 127.0.0.1; done
 
 
+-----------------------------
+
+
+NEW: InfluxDB + Grafana Integration
+InfluxDB Bucket: _monitoring
+
+Measurement: syn_alerts
+
+Fields: syn_count, window
+
+Tag: source_ip
+
+Dashboards show real-time alert trends grouped by IPs over time.
+
+
+-------------------
 
 How It Works
 
